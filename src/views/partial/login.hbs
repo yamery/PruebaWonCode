@@ -1,0 +1,99 @@
+<div class="section m-3">
+    <div class="container">
+    <div class="card">
+    <div class="card-body">
+         <form action="/login" method="POST">
+       <div class="mb-3">
+            <label for="email" class="form-label">Usuario</label>
+            <input class="form-control" type="text" name="email" id="email" placeholder="Usuario">
+       </div>
+        <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input class="form-control" type="password" name="password" id="password" placeholder="Usuario">
+        </div>
+        <input class="btn btn-primary" type="submit" value="Enviar">
+    </form>
+    </div>
+    
+</div>
+<button class="btn btn-primary m-3" data-toggle="modal" href="#" data-target="#regis">Registrar</button>
+
+
+
+</div>
+</div>
+
+
+<div class="modal fade" id="regis" >
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-tittle">Registrar Usuario</h4>
+                
+                <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                   
+                    </button>
+            </div>
+            <div class="modal-body">
+               <div class="card text-center">
+                                    <div class="card-body">
+                                          <div class="container">
+    <form action="/crudnodejs/Regis" method="POST">
+
+                        
+
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="form-group mb-3">
+                            <input type="text" class="form-control" name="Cedula" placeholder="Cedula " autofocus> 
+                        </div>
+                        </div>
+                            <div class="col-6">
+                                  <div class="form-group mb-3">                            
+                           <input type="text" class="form-control" name="Nombre" placeholder="Nombre" > 
+                        </div>
+                             
+                            </div>
+                            <div class="col-6">
+                                  <div class="form-group mb-3">                            
+                           <input type="text" class="form-control" name="Apellidos" placeholder="Apellidos" > 
+                        </div>
+                             
+                            </div>
+                            <div class="col-6">
+                                  <div class="form-group mb-3">                            
+                           <input type="text" class="form-control" name="Telefono" placeholder="Telefono" > 
+                        </div>
+                             
+                            </div>
+                            <div class="col-6">
+                                  <div class="form-group mb-3">                            
+                           <input type="text" class="form-control" name="email" placeholder="Correo" > 
+                        </div>
+                        </div>
+
+                        <div class="col-6">
+                                  <div class="form-group mb-3">                            
+                           <input type="password" class="form-control" name="password" placeholder="password" > 
+                        </div>                             
+                            </div>
+
+                            <div class="col-12">
+                                 <div class="form-group mb-3">
+                            <button class="btn btn-primary btn-block" id="comprar">Registrar</button>
+                        </div>
+                            </div>
+
+                        </div>
+
+                            </form>
+                        
+                        
+ 
+</div>
+                                    </div>
+                                </div>
+            </div>
+        </div>
+    </div>
+</div>

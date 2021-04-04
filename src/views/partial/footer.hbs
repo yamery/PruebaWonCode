@@ -1,0 +1,120 @@
+{{!-- <ul class="nav justify-content-end" id="footer-ul">
+     <li class="nav-item">
+        <a href="/crudnodejs/add" class="btn btn-primary" >INICIO</a>
+    </li>
+    <li class="nav-item">
+        <a  class="btn btn-primary" data-toggle="modal" data-target="#agregar">AGREGAR</a>
+    </li>
+    <li class="nav-item">
+        <a href="/crudnodejs/lista_compras" class="btn btn-primary" >COMPRAS</a>
+    </li>
+    <li class="nav-item">
+        <a href="" class="nav-link disbled" tabindex="-1" aria-disabled="true">CRUD NODE JS</a>
+    </li>
+</ul> --}}
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="/crudnodejs/add">MEMBRESIAS</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="/crudnodejs/add">INICIO</a>
+      </li>
+      
+       {{#if confirm}}
+       <li class="nav-item">
+        <a class="nav-link" data-toggle="modal" href="#" data-target="#agregar">AGREGAR</a>
+      </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/crudnodejs/lista_compras">COMPRAS</a>
+      </li>
+
+      
+     {{/if}}
+     <li class="nav-item">
+                   <a href="/logout" class="btn btn-primary">Cerrar sesion</a>
+      </li>
+    
+      
+      
+    </ul>
+  </div>
+</nav>
+
+
+
+
+
+
+{{!-- AGREGAR DESDE UN MODAL --}}
+
+<div class="modal fade" id="agregar" >
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-tittle">Agregar</h4>
+                
+                <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                   
+                    </button>
+            </div>
+            <div class="modal-body">
+                <div class="card-body">
+                    <form action="/crudnodejs/adduser" id="crearMembre" method="POST" enctype="multipart/form-data">
+                        
+                        <div class="mb-3">
+                            <div class="form-group">
+                            <input type="text" class="form-control" name="Name_membresia" placeholder="Nombre membresia" autofocus> 
+                        </div>
+                        </div>
+                        
+                        
+                        <div class="mb-3">
+                                                      
+                            <textarea class="form-control" name="Desc_membresia" placeholder="Descripcion membresia" rows="2"></textarea>
+                        
+                        </div>
+
+                        <div class="mb-3">
+                            <div class="form-group">
+                            <label for="duracion">Duracion membresia:</label>
+                          <select class="form-select" aria-label="Default select example" id="duracion"name="duracion">
+                             <option value="1">Mensual</option>
+                             <option value="2">Anual</option>
+                            
+                          </select>
+                        </div>
+                        </div>
+
+                          <div class="mb-3">
+                            <div class="form-group">
+                            <input type="number" class="form-control" name="precio" placeholder="Precio de la membrecia" > 
+                        </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <div class="form-group">
+                          <input type="file" name="imagen">
+                        </div>
+                        </div>
+
+                        
+                      
+                      
+                        
+                        <div class="form-group">
+                            <button class="btn btn-primary btn-block" id="GUARDAR">Guardar</button>
+                        </div>
+
+
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

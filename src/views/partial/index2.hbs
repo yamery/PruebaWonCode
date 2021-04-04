@@ -1,0 +1,62 @@
+ {{>footer}}
+
+<main>
+    <div class="container" id="cont-index">
+                     
+                    <div class="row">
+                        {{#each membresias}}
+                            <div class=" col-lg-6  col-md-6 col-xl-4 col-sm-12 col-12 ">
+                                <div class="card text-center m-1" style="width: 20rem;">
+                                    
+                                  <div style="height: 250px; overflow: hidden;">
+                                        <img class="card-img-top" src="/images/{{Tit_imagen}}" alt="Card image cap">
+                                  </div>
+                                    
+                                    <div class="card-body">
+                                                                           
+                                                <h1  class="card-title"style="text-transform:uppercase">
+                                                    {{Name_membresia}}
+                                                </h1> 
+
+                                                <h2 class="{{#classcomparation duracion}}{{/classcomparation}} text-uppercase">
+                                                        {{#CompareDuration duracion}}{{/CompareDuration}}
+                                                </h2>
+                                            
+
+                                                <p class="card-text">
+                                                    {{Desc_membresia}}
+                                                    
+                                                </p>
+                                            
+
+
+                                           <div id="Falta"></div>
+
+                                            
+                                               </div>
+                                               {{!-- <div class="col-5">
+                                                   <a href="/crudnodejs/delete/{{ID_membresia}}" class="btn btn-danger d-block">
+                                                ELIMINAR
+                                            </a>
+                                               </div> --}}
+                                           </div>
+
+
+                                           
+                                                                            
+                                    </div>
+                                    {{/each}}
+                                </div>
+                              
+                            </div>
+                        
+                   
+
+                    
+               
+         
+       
+    
+
+    
+</main>

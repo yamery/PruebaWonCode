@@ -1,0 +1,34 @@
+ {{>footer}}
+
+<div class="section">
+    <div class="container ">
+
+<h2>TABLA DE LAS MEMBRESIAS CON USUARIOS</h2>
+
+        <table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Cedula</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">Celular</th>
+      <th scope="col">Membresia</th>
+       <th scope="col">Restante</th>
+    </tr>
+  </thead>
+  <tbody>
+  
+   
+     {{#each compras}}
+                         <tr id="{{Nombre}}">
+      <th scope="row">{{Cedula}}</th>
+      <td>{{Nombre}}</td>
+      <td>{{Telefono}}</td>
+      <td>{{membresia}}</td>
+      <td id="{{Cedula}}"></td>
+      
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
+    </div>
+</div>

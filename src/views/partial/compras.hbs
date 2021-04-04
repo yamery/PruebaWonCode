@@ -1,0 +1,93 @@
+ 
+    <div class="card text-center">
+                                    <div class="card-body">
+                                          <div class="container">
+                                              <h1>CONFIRMAR COMPRA</h1>
+
+                                              <div class="card text-center m-1" style="width: 20rem;">
+                                    
+                                  <div style="height: 250px; overflow: hidden;">
+                                        <img class="card-img-top" src="/images/{{membresia.Tit_imagen}}" alt="Card image cap">
+                                  </div>
+                                    
+                                    <div class="card-body">
+                                                                           
+                                                <h1  class="card-title"style="text-transform:uppercase">
+                                                    {{membresia.Name_membresia}}
+                                                </h1> 
+
+                                                <h2 class="{{#classcomparation membresia.duracion}}{{/classcomparation}} text-uppercase">
+                                                        {{#CompareDuration membresia.duracion}}{{/CompareDuration}}
+                                                </h2>
+                                            
+
+                                                <p class="card-text">
+                                                    {{membresia.Desc_membresia}}
+                                                    
+                                                </p>
+
+                                                <h3>${{membresia.precio}}</h3>
+                                            
+
+
+                                           <a href="/crudnodejs/ConCompra/{{membresia.ID_membresia}}" class="btn btn-primary">Confirmar compra</a>
+
+                                            
+                                               </div>
+                                               {{!-- <div class="col-5">
+                                                   <a href="/crudnodejs/delete/{{ID_membresia}}" class="btn btn-danger d-block">
+                                                ELIMINAR
+                                            </a>
+                                               </div> --}}
+                                           </div>
+    {{!-- <form action="/crudnodejs/addcompra" method="POST">
+
+                        <input name="Membresias_ID_membresia" type="hidden" value="{{membresia.ID_membresia}}">    
+
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="form-group">
+                            <input type="text" class="form-control" name="Cedula" placeholder="Cedula " autofocus> 
+                        </div>
+                        </div>
+                            <div class="col-6">
+                                  <div class="form-group">                            
+                           <input type="text" class="form-control" name="Nombre" placeholder="Nombre" > 
+                        </div>
+                             
+                            </div>
+                            <div class="col-6">
+                                  <div class="form-group">                            
+                           <input type="text" class="form-control" name="Apellidos" placeholder="Apellidos" > 
+                        </div>
+                             
+                            </div>
+                            <div class="col-6">
+                                  <div class="form-group">                            
+                           <input type="text" class="form-control" name="Telefono" placeholder="Telefono" > 
+                        </div>
+                             
+                            </div>
+                            <div class="col-6">
+                                  <div class="form-group">                            
+                           <input type="text" class="form-control" name="Correo" placeholder="Correo" > 
+                        </div>
+                             
+                            </div>
+                            <div class="col-12">
+                                 <div class="form-group">
+                            <button class="btn btn-primary btn-block" id="comprar">Comprar</button>
+                        </div>
+                            </div>
+
+                        </div>
+
+                            </form> --}}
+                        
+                        
+ 
+</div>
+                                    </div>
+                                </div>
+
+
